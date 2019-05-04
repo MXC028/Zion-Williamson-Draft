@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript">
+
+			var teamsList = [
+				/* Suns Chances */
+				"Phoenix Suns", "Phoenix Suns", "Phoenix Suns", "Phoenix Suns", "Phoenix Suns", "Phoenix Suns", "Phoenix Suns", "Phoenix Suns", "Phoenix Suns", "Phoenix Suns", "Phoenix Suns", "Phoenix Suns", "Phoenix Suns", "Phoenix Suns",
+				/* Knicks Chances */
+				"New York Knicks", "New York Knicks", "New York Knicks", "New York Knicks", "New York Knicks", "New York Knicks", "New York Knicks", "New York Knicks", "New York Knicks", "New York Knicks", "New York Knicks", "New York Knicks", "New York Knicks", "New York Knicks",
+				/* Cleveland Caveliers */
+				"Cleveland Caveliers", "Cleveland Caveliers", "Cleveland Caveliers", "Cleveland Caveliers", "Cleveland Caveliers", "Cleveland Caveliers", "Cleveland Caveliers", "Cleveland Caveliers", "Cleveland Caveliers", "Cleveland Caveliers", "Cleveland Caveliers", "Cleveland Caveliers", "Cleveland Caveliers", "Cleveland Caveliers",
+				/* Chicago Bulls */
+				"Chicago Bulls", "Chicago Bulls", "Chicago Bulls", "Chicago Bulls", "Chicago Bulls", "Chicago Bulls", "Chicago Bulls", "Chicago Bulls", "Chicago Bulls", "Chicago Bulls", "Chicago Bulls", "Chicago Bulls",
+				/* Atlanta Hawks */
+				"Atlanta Hawks", "Atlanta Hawks", "Atlanta Hawks", "Atlanta Hawks", "Atlanta Hawks", "Atlanta Hawks", "Atlanta Hawks", "Atlanta Hawks", "Atlanta Hawks", "Atlanta Hawks",
+				/* Dallas Mavericks */
+				"Dallas Mavericks", "Dallas Mavericks", "Dallas Mavericks", "Dallas Mavericks", "Dallas Mavericks", "Dallas Mavericks",
+				/* Memphis Grizzlies */
+				"Memphis Grizzlies", "Memphis Grizzlies", "Memphis Grizzlies", "Memphis Grizzlies", "Memphis Grizzlies", "Memphis Grizzlies", 
+				/* Wahington Wizards */
+				"Washington Wizards", "Washington Wizards", "Washington Wizards", "Washington Wizards", "Washington Wizards", "Washington Wizards", "Washington Wizards", "Washington Wizards", "Washington Wizards",
+				/* New Orleans Pelicans */
+				"New Orleans Pelicans", "New Orleans Pelicans", "New Orleans Pelicans", "New Orleans Pelicans", "New Orleans Pelicans", "New Orleans Pelicans",
+				/* Minnesota Timberwolves */
+				"Minnesota Timberwolves", "Minnesota Timberwolves", "Minnesota Timberwolves",
+				/* Los Angeles Lakers */
+				"Los Angeles Lakers", "Los Angeles Lakers", 
+				/* Charlotte Hornets */
+				"Charlotte Hornets", 
+				/* Miami Heat */
+				"Miami Heat",
+				/*Sacramento Kings */
+				"Sacramento Kings"
+				];
+
+				var rand = teamsList[Math.floor(Math.random() * teamsList.length)];
+				
+				/*
+				function pic() {
+					var pic = "https://i.imgur.com/2UF2fDV.jpg";
+					document.getElementById('zionPic').src = pic.replace('90x90', '225x225');
+					document.getElementById('zionPic').style.display = "block";
+				};
+				*/
+
+				function teamPicture() {
+					if (rand === "Phoenix Suns"){
+						var suns = "https://i.imgur.com/Q6t69Ic.png";
+
+						document.getElementById('suns').style.display = "block";
+					} else if (rand === "New York Knicks") {
+						var knicks = "https://i.imgur.com/fxtnbGT.png";
+						document.getElementById('knicks').style.display = "block";
+					} else if (rand === "Cleveland Caveliers") {
+						var cavs = "https://i.imgur.com/Z4C5T4m.png";
+						document.getElementById('cavs').style.display = "block";
+					} else if (rand === "Chicago Bulls") {
+						var bulls = "https://i.imgur.com/JFMUJmT.png";
+						document.getElementById('bulls').style.display = "block";
+					} else if(rand === "Atlanta Hawks") {
+						var hawks ="https://i.imgur.com/sJafUI6.png";
+						document.getElementById('hawks').style.display = "block";
+					} else if (rand === "Dallas Mavericks") {
+						var mavericks = "https://i.imgur.com/Adae2YD.png";
+						document.getElementById('mavericks').style.display = "block";
+					} else if (rand === "Memphis Grizzlies") {
+						var grizzlies = "https://i.imgur.com/2kzcRdy.png";
+						document.getElementById('grizzlies').style.display = "block";
+					} else if (rand === "Washington Wizards") {
+						var wizards = "https://i.imgur.com/tNvsx6G.png";
+						document.getElementById('wizards').style.display = "block";
+					} else if (rand === "New Orleans Pelicans") {
+						var pelicans = "https://i.imgur.com/JGqrjCa.png";
+						document.getElementById('pelicans').style.display = "block";
+					} else if (rand === "Los Angeles Lakers") {
+						var lakers = "https://i.imgur.com/v6dPmjN.png";
+						document.getElementById('lakers').style.display = "block";
+					} else if (rand === "Charlotte Hornets") {
+						var hornets = "https://i.imgur.com/qxMzONV.png";
+						document.getElementById('hornets').style.display = "block";
+					} else if (rand === "Minnesota Timberwolves") {
+						var timberwolves = "https://i.imgur.com/vVURI5p.png";
+						document.getElementById('timberwolves').style.display = "block";
+					} else if (rand === "Sacramento Kings") {
+						var kings = "https://i.imgur.com/R4fESgj.png";
+						document.getElementById('kings').style.display = "block";
+					} else if (rand === "Miami Heat") {
+						var heat = "https://i.imgur.com/D5nzdIy.png";
+						document.getElementById('heat').style.display = "block";
+					}
+
+					else {
+						return none;
+					};
+				};
+		
+	</script>
+</head>
+<body style="background-image: url(https://i.imgur.com/DwBoXAc.png);">
+	<h1 style="text-align: center; color: #4666FF;">Chances Of Landing ZION</h1>
+		<br>
+
+		<!-- CLICK THAT CHOOSES TEAM -->
+	<center><button onclick="getElementById('demo').innerHTML = rand; /*pic();*/ teamPicture();" type="button" style="color: #FF8C00; font-size: 40px; border-radius: 25px; background-color: #808080;">Click To See If Your Team Wins!</button></center> 
+
+		<!-- CLEAR BUTTON -->
+	<center><button style="font-size: 40px; border-radius: 25px; background-color: #808080;" value="Refresh Page" onclick="window.location.reload()">Clear</button></center>
+
+	<!--<h2 style="margin-left: 500px; font-size: 30px; color: #4666FF;">Team</h2> -->
+	<p id="demo" style="margin-left: 500px; font-size: 25px; color: #fff;"></p>
+
+	<div>
+
+	<!-- DISPLAYING TEAM SELECTED -->
+	<img id="zionPic" src="https://i.imgur.com/2UF2fDV.jpg" style="display: none; width: 500px; height: 300px;"> 
+	<img id="suns" src="https://i.imgur.com/Q6t69Ic.png" style="display: none; width: 600px; height: 400px; margin-left: 500px;">
+	<img id="knicks" src="https://i.imgur.com/fxtnbGT.png" style="display: none; width: 600px; height: 400px; margin-left: 500px;">
+	<img id="cavs" src="https://i.imgur.com/Z4C5T4m.png" style="display: none; width: 600px; height: 400px; margin-left: 500px;">
+	<img id="bulls" src="https://i.imgur.com/JFMUJmT.png" style="display: none; width: 600px; height: 400px; margin-left: 500px;">
+	<img id="hawks" src="https://i.imgur.com/sJafUI6.png" style="display: none; width: 600px; height: 400px; margin-left: 500px;">
+	<img id="mavericks" src="https://i.imgur.com/Adae2YD.png" style="display: none; width: 600px; height: 400px; margin-left: 500px;">
+	<img id="grizzlies" src="https://i.imgur.com/2kzcRdy.png" style="display: none; width: 600px; height: 400px; margin-left: 500px;">
+	<img id="wizards" src="https://i.imgur.com/tNvsx6G.png" style="display: none; width: 600px; height: 400px; margin-left: 500px;">
+	<img id="pelicans" src="https://i.imgur.com/JGqrjCa.png" style="display: none; width: 600px; height: 400px; margin-left: 500px;">
+	<img id="lakers" src="https://i.imgur.com/v6dPmjN.png" style="display: none; width: 600px; height: 400px; margin-left: 500px;">
+	<img id="hornets" src="https://i.imgur.com/qxMzONV.png" style="display: none; width: 600px; height: 400px; margin-left: 500px;">
+	<img id="timberwolves" src="https://i.imgur.com/vVURI5p.png" style="display: none; width: 600px; height: 400px; margin-left: 500px;">
+	<img id="kings" src="https://i.imgur.com/R4fESgj.png" style="display: none; width: 600px; height: 400px; margin-left: 500px;">
+	<img id="heat" src="https://i.imgur.com/D5nzdIy.png" style="display: none; width: 600px; height: 400px; margin-left: 500px;">
+	</div>
+</body>
+</html>
